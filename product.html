@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBANKICK | Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+    <style>
+        /* Page Specific Styles (will likely move to global later if grows) */
+        .product-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+            padding-top: 80px;
+            /* Navbar space */
+        }
+
+        .product-visual {
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-visual img {
+            width: 80%;
+            max-width: 600px;
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+            transition: transform 0.5s ease;
+        }
+
+        .product-visual:hover img {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .product-details-pane {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pd-category {
+            font-family: var(--font-heading);
+            color: var(--accent-lime);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .pd-title {
+            font-size: 4rem;
+            line-height: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .pd-price {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 2rem;
+            font-family: var(--font-body);
+            font-weight: 300;
+        }
+
+        .pd-desc {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 3rem;
+            max-width: 80%;
+        }
+
+        .buy-btn {
+            background: var(--accent-pink);
+            color: #fff;
+            border: none;
+            padding: 1.5rem 3rem;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: fit-content;
+            transition: all 0.2s;
+            text-transform: uppercase;
+        }
+
+        .buy-btn:hover {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 0 20px var(--accent-pink);
+        }
+
+        @media (max-width: 900px) {
+            .product-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .product-visual {
+                padding: 4rem 0;
+            }
+
+            .product-visual img {
+                width: 60%;
+            }
+
+            .product-details-pane {
+                padding: 2rem;
+            }
+
+            .pd-title {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">URBANKICK</a></div>
+            <div class="nav-links">
+                <a href="index.html">Drops</a>
+                <a href="catalog.html">Collection</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+        </nav>
+
+        <div id="product-container">
+            <!-- Injected via JS -->
+        </div>
+
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>

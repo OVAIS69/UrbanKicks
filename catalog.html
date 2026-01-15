@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBANKICK | Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+    <style>
+        .catalog-header {
+            padding: 8rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-lime);
+            color: #000;
+            border-color: var(--accent-lime);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">URBANKICK</a></div>
+            <div class="nav-links">
+                <a href="index.html">Drops</a>
+                <a href="catalog.html" class="active">Collection</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+        </nav>
+
+        <main>
+            <div class="catalog-header">
+                <h1 class="reveal">FULL COLLECTION</h1>
+                <p class="subtitle reveal">WEAR THE FUTURE</p>
+            </div>
+
+            <div class="filters reveal">
+                <button class="filter-btn active" data-filter="ALL">ALL</button>
+                <button class="filter-btn" data-filter="HOODIE">HOODIES</button>
+                <button class="filter-btn" data-filter="TEES">TEES</button>
+                <button class="filter-btn" data-filter="BOTTOMS">BOTTOMS</button>
+                <button class="filter-btn" data-filter="ACCESSORIES">ACCESSORIES</button>
+            </div>
+
+            <section class="products">
+                <div class="product-grid" id="catalog-grid">
+                    <!-- Products injected via JS -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 URBANKICK.</p>
+        </footer>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="URBANKICK - Premium Streetwear for the New Generation. Limited Drops. High Quality." />
+    <title>URBANKICK | Streetwear</title>
+    <!-- Fonts: Syne (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo">URBANKICK</div>
+            <div class="nav-links">
+                <a href="index.html">Drops</a>
+                <a href="catalog.html">Collection</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+        </nav>
+
+        <main>
+            <section class="hero" id="hero">
+                <div class="hero-content">
+                    <h1 class="glitch" data-text="FRESH DROPS">FRESH DROPS</h1>
+                    <p class="subtitle">LIMITED EDITION // ACT FAST</p>
+                    <button class="cta-btn">SHOP NOW</button>
+                </div>
+                <div class="hero-image-container">
+                    <!-- Dynamic Image will be inserted here -->
+                </div>
+            </section>
+
+            <section class="ticker">
+                <div class="ticker-content">
+                    <span>SPRING X SUMMER collection /// FREE SHIPPING WORLDWIDE /// NEW ARRIVALS /// </span>
+                    <span>SPRING X SUMMER collection /// FREE SHIPPING WORLDWIDE /// NEW ARRIVALS /// </span>
+                </div>
+            </section>
+
+            <section class="products" id="drops">
+                <h2>LATEST HEAT</h2>
+                <div class="product-grid" id="product-grid">
+                    <!-- Products injected via JS -->
+                </div>
+            </section>
+            </section>
+
+            <section class="newsletter reveal">
+                <div class="newsletter-content">
+                    <h2>JOIN THE CULT</h2>
+                    <p>GET DROPS BEFORE THE MASSES.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 URBANKICK. Burn in the streets.</p>
+            </footer>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>

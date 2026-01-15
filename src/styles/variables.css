@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --bg-color: #0a0a0a;
+  --card-bg: #141414;
+  --text-main: #ffffff;
+  --text-muted: #888888;
+  --accent-lime: #ccff00;
+  --accent-pink: #ff00ff;
+  --border-color: #333333;
+
+  /* Fonts */
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

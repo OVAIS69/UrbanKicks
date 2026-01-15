@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBANKICK | About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+    <style>
+        .about-section {
+            padding: 8rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-block {
+            margin-bottom: 6rem;
+        }
+
+        .about-title {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 2rem;
+            color: var(--accent-pink);
+        }
+
+        .about-text {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .manifesto {
+            border-left: 4px solid var(--accent-lime);
+            padding-left: 2rem;
+            font-style: italic;
+        }
+
+        .visual-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .visual-item {
+            background: #222;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">URBANKICK</a></div>
+            <div class="nav-links">
+                <a href="index.html">Drops</a>
+                <a href="catalog.html">Collection</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+            <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+        </nav>
+
+        <main class="about-section">
+            <div class="about-block reveal">
+                <h1 class="about-title">NOT JUST A BRAND.<br>A MOVEMENT.</h1>
+                <p class="about-text">URBANKICK was born in the underground rave scene of 2024. We don't follow trends;
+                    we set the tempo for the streets. Our designs reflect the chaos, height, and energy of the concrete
+                    jungle.</p>
+            </div>
+
+            <div class="about-block reveal manifesto">
+                <p class="about-text">"We believe in bold expression. If you're not turning heads, you're blending in.
+                    And we don't do blending in."</p>
+            </div>
+
+            <div class="visual-grid reveal">
+                <div class="visual-item"
+                    style="background-image: url('./public/images/tokyo.png'); background-size: cover; background-position: center;">
+                    <span style="background: rgba(0,0,0,0.7); padding: 0.5rem 1rem;">TOKYO</span>
+                </div>
+                <div class="visual-item"
+                    style="background-image: url('./public/images/ny.png'); background-size: cover; background-position: center;">
+                    <span style="background: rgba(0,0,0,0.7); padding: 0.5rem 1rem;">NEW YORK</span>
+                </div>
+                <div class="visual-item"
+                    style="background-image: url('./public/images/london.png'); background-size: cover; background-position: center;">
+                    <span style="background: rgba(0,0,0,0.7); padding: 0.5rem 1rem;">LONDON</span>
+                </div>
+                <div class="visual-item"
+                    style="background-image: url('./public/images/seoul.png'); background-size: cover; background-position: center;">
+                    <span style="background: rgba(0,0,0,0.7); padding: 0.5rem 1rem;">SEOUL</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 URBANKICK.</p>
+        </footer>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>

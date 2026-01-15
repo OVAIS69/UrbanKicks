@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBANKICK | SECURED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+    <style>
+        .success-wrapper {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .check-icon {
+            font-size: 8rem;
+            color: var(--accent-lime);
+            margin-bottom: 2rem;
+            animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .success-title {
+            font-size: 6rem;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            animation: slideUp 0.8s ease forwards 0.2s;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .order-msg {
+            font-family: var(--font-heading);
+            color: #888;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            animation: slideUp 0.8s ease forwards 0.4s;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .home-btn {
+            padding: 1rem 3rem;
+            border: 2px solid var(--accent-lime);
+            color: var(--accent-lime);
+            background: transparent;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            animation: fadeIn 1s ease forwards 0.8s;
+            opacity: 0;
+        }
+
+        .home-btn:hover {
+            background: var(--accent-lime);
+            color: #000;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-wrapper">
+        <div class="check-icon">✓</div>
+        <h1 class="success-title">DROP SECURED</h1>
+        <p class="order-msg">YOUR ORDER IS CONFIRMED. WELCOME TO THE CULT.</p>
+        <a href="index.html"><button class="home-btn">CONTINUE SHOPPING</button></a>
+    </div>
+
+    <!-- Confetti Logic -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger Confetti
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#ccff00', '#ff00ff', '#ffffff']
+        });
+    </script>
+</body>
+
+</html>
